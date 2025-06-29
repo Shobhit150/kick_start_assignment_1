@@ -1,0 +1,107 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form_header{
+    padding: 15px;
+    font-size: 35px;
+}
+.form_des{
+    color: rgb(150,150,160);
+    margin-bottom: 10px;
+}
+.form_warn{
+    font-size: 15px;
+    color: rgb(120,120,130);
+    margin-bottom: 50px;
+}
+.verification_box{
+    background: linear-gradient(135deg, rgb(29,27,71), black);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.form_container{
+    padding: 40px 30px;
+    border: 1px solid rgb(38,42,54);
+    width: 100%;
+    max-width: 540px;
+    border-radius: 12px;
+    background-color: rgba(38,42,54,.5);
+    
+}
+.form_text{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.form_fill{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    cursor: pointer;
+    font-size: 15px;
+
+    
+}
+.input_class {
+    border: 1px solid rgba(71,76,86,.9);
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: rgb(36,40,52);
+    margin-top: 10px;
+}
+.form_fill input {
+    pointer-events: none;
+
+}
+.form_container input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    max-width: 200px;
+    
+    padding: 5px;
+}
+.date_wrapper input[type="date"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+.date_wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.verify_button{
+    background: linear-gradient(90deg, rgb(78,127,238), rgb(135,57,225));
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px; 
+    font-size: 20px;
+    margin-top: 10px;
+}
+.t_and_c{
+    color: rgb(103,105,110);
+    font-size: 15px;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+

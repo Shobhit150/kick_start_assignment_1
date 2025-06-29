@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <main class="verification_box"> 
+        <img src="/images/logo.png" alt="logo" width="65" height="65">
+        <h2 class="form_header">
+            TaskFlow
+        </h2>  
+        <div class="form_des">
+            Your Personal Productivity Companion
+        </div> 
+        <p class="form_warn">
+            Age verification required for access
+        </p>
+        <!-- My form -->
+        <form class="form_container" id="verificationForm" action="">
+            <h4 class="form_text">
+                Verify Your Identity
+            </h4>
+            <!-- data to fill here -->
+            <div>
+                <!-- name -->
+                <div class="form_fill">
+                    <label for="name">Full Name</label>
+                    <div class="input_class">
+                      <input type="text" placeholder="Enter your full name" id="name" required>
+                    </div>
+                  </div>
+                <!-- bod  -->
+                <div class="form_fill date_wrapper" id="form_date">
+                    <label for="bod">Date of Birth</label>
+                    <div class="input_class">
+                        <input type="date" id="dob" required>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- submit button -->
+            <button class="verify_button" type="submit">Verify & Continue</button>
+        </form>
+
+        
+        <p class="t_and_c">
+            By continuing, you confirm that you are over 10 years old and agree to our terms of service.
+        </p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
