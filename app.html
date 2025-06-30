@@ -1,26 +1,61 @@
-<body>
-    <header>
-        <img id="avatar" />
-        <h2 id="welcome">hi</h2>
-        <button id="signOut">Sign Out</button>
+<head>
+    <meta charset="UTF-8">
+    <title>App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body class="">
+
+    <header class="header">
+        <div class=" app_header_body ">
+            <div class="header_name">
+                My todo List
+            </div>
+            <div class="header_elements">
+                
+                <div>
+                    <h2 id="welcome"></h2>
+                </div>
+                <div class="avatar_image">
+                    <img id="avatar" width="40" height="40"/>
+                </div>
+                <div>
+                    <button id="signOut">Sign Out</button>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
-        <section>
-          <h3>Todo (<span id="todoCount">0</span>)</h3>
-          <ul id="todoList"></ul>
-          <input type="text" id="newTask" placeholder="Add new task...">
-          <button id="addTask">Add Task</button>
-        </section>
-    
-        <section>
-          <h3>Completed (<span id="completedCount">0</span>)</h3>
-          <ul id="completedList"></ul>
-        </section>
-    
-        <section>
-          <h3>Archived (<span id="archivedCount">0</span>)</h3>
-          <ul id="archivedList"></ul>
-        </section>
+    <main class="task_body">
+        <div class="task_display">
+            <section class="show_task_choose">
+                <div class="task_choose" data-type="todo">
+                  <h3>Todo (<span id="todoCount">0</span>)</h3>
+                </div>
+                <div class="task_choose" data-type="completed">
+                  <h3>Completed (<span id="completedCount">0</span>)</h3>
+                </div>
+                <div class="task_choose" data-type="archived">
+                  <h3>Archived (<span id="archivedCount">0</span>)</h3>
+                </div>
+              </section>
+              <section class="input_section">
+                <input type="text" id="newTask" placeholder="Add your task (text-box)">
+                <button id="addTask">Submit</button>
+              </section>
+              
+              <section id="todoSection">
+                <ul id="todoList"></ul>
+              </section>
+              
+              <section id="completedSection">
+                <ul id="completedList"></ul>
+              </section>
+              
+              <section id="archivedSection">
+                <ul id="archivedList"></ul>
+              </section>
+        </div>
+        
+        
       </main>
       <script src="app.js"></script>
 </body>
