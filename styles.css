@@ -130,7 +130,7 @@
 .task_body {
   padding-top: 20px;
   background-color: rgb(30, 38, 55);
-  height: calc(100vh - 66px);
+  height: calc(100vh - 56px);
 }
 .task_display {
   padding: 0px 50px;
