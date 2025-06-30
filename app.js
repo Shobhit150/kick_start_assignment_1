@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
         todoList.appendChild(li);
       } else if (task.stage === "completed") {
         archiveBtn.innerText = "Archive";
+        archiveBtn.classList.add("task_archive_button");
         archiveBtn.addEventListener("click", () => {
           task.stage = "archived";
           task.updatedAt = new Date().toLocaleString();
